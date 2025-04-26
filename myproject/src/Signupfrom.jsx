@@ -87,7 +87,7 @@ const SignUpForm = () => {
                     name="course"
                     value={course}
                     placeholder='Select Course'
-                    onChange={(e) => setCourse(e.target.value)}
+                    // onChange={(e) => setCourse(e.target.value)}
                     required
                   ><i class="login__icon fa-solid fa-circle-chevron-down signup_icons"></i>
                     <option value="course">Select Course</option>
@@ -106,7 +106,7 @@ const SignUpForm = () => {
                     name="photo"
                     placeholder="Upload your photo with unifrom"
                     accept="image/*"
-                    onChange={(e) => setPhoto(e.target.files[0])}
+                    // onChange={(e) => setPhoto(e.target.files[0])}
                     required
                   />
                 </div>
