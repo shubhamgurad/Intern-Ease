@@ -52,7 +52,6 @@ const SignUpForm = () => {
           <div className="signup-content">
             <div className="signup-form">
               <h2 className="signup-form-title">Sign up</h2>
-
               <form onSubmit={handleSubmit} className="register-form" id="register-form">
                 <div className="signup-form-group">
                   <label htmlFor="name"><i className="login__icon fas fa-user signup_icons"></i></label>
@@ -66,7 +65,6 @@ const SignUpForm = () => {
                   <label htmlFor="pass"><i className="login__icon fas fa-lock signup_icons"></i></label>
                   <input type="password" className='signup-input' name="pass" id="pass" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
                 </div>
-                
                 <div className="signup-form-group">
                   <label htmlFor="pass"><i class="login__icon fa-solid fa-phone signup_icons"></i></label>
                   <input className='signup-input'
@@ -82,12 +80,10 @@ const SignUpForm = () => {
                 <div className="signup-form-group">
                   <label htmlFor="pass"></label>
                   <select className="info-input"
-
                     id="course"
                     name="course"
                     value={course}
                     placeholder='Select Course'
-                    onChange={(e) => setCourse(e.target.value)}
                     required
                   ><i class="login__icon fa-solid fa-circle-chevron-down signup_icons"></i>
                     <option value="course">Select Course</option>
@@ -106,7 +102,6 @@ const SignUpForm = () => {
                     name="photo"
                     placeholder="Upload your photo with unifrom"
                     accept="image/*"
-                    onChange={(e) => setPhoto(e.target.files[0])}
                     required
                   />
                 </div>
@@ -114,7 +109,6 @@ const SignUpForm = () => {
                   <input type="submit" name="signup" id="signup" className="signup-form-submit" value="Register" />
                 </div>
               </form>
-
             </div>
           </div>
         </Col>
